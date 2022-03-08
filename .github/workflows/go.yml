@@ -21,7 +21,6 @@ jobs:
     - name: Build
       run: |
         GOARCH=amd64 GOOS=linux go build -o ./ -v ./...
-        ls -la
 
     - name: Test
       run: go test -v ./...
