@@ -20,7 +20,7 @@ jobs:
 
     - name: Build
       run: |
-        GOARCH=amd64 GOOS=linux go build -o bricks-core -v ./...
+        GOARCH=amd64 GOOS=linux go build -o ./bricks-core -v ./...
         ls -la
 
     - name: Test
