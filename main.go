@@ -7,6 +7,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"gopkg.in/yaml.v3"
 	"log"
+	"net/http"
 	"os"
 	"strings"
 )
@@ -80,9 +81,20 @@ func routerEngine() *gin.Engine {
 }
 
 func main() {
-	addr := "localhost:" + os.Getenv("PORT")
-	fmt.Println(addr)
-	log.Fatal(gateway.ListenAndServe(addr, routerEngine()))
+	port := os.Getenv("PORT")
+	mode := os.Getenv("MODE")
+	if port == "" {
+		port = "8080"
+	}
+	addr := ":" + port
+	log.Println("=======================================")
+	log.Println("Runinng gin-lambda server in " + addr)
+	log.Println("=======================================")
+	if mode == "production" {
+		log.Fatal(gateway.ListenAndServe(addr, routerEngine()))
+	} else {
+		log.Fatal(http.ListenAndServe(addr, routerEngine()))
+	}
 
 	//r.GET("/components", controllers.ReadComponents)
 	//r.POST("/components", controllers.CreateComponent)
