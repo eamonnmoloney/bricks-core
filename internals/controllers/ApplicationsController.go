@@ -39,7 +39,7 @@ func ReadApplications(c *gin.Context) {
 func CreateApplication(c *gin.Context) {
 	//var applications []models.Application
 	application := models.Application{
-		Name: "foo",
+		Name: "bar",
 	}
 	//c.ShouldBindJSON(&application)
 	//

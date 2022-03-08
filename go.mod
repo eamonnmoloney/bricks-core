@@ -5,7 +5,6 @@ go 1.17
 require (
 	github.com/Valiben/gin_unit_test v0.0.0-20181205064931-674aee46d090
 	github.com/apex/gateway v1.1.2
-	github.com/doug-martin/goqu v5.0.0+incompatible
 	github.com/doug-martin/goqu/v9 v9.18.0
 	github.com/gin-gonic/gin v1.7.7
 	github.com/jackc/pgx/v4 v4.15.0
@@ -20,7 +19,7 @@ require (
 	github.com/Microsoft/go-winio v0.5.1 // indirect
 	github.com/Nvveen/Gotty v0.0.0-20120604004816-cd527374f1e5 // indirect
 	github.com/aws/aws-lambda-go v1.17.0 // indirect
-	github.com/c2fo/testify v0.0.0-20150827203832-fba96363964a // indirect
+	github.com/cenkalti/backoff/v4 v4.1.2 // indirect
 	github.com/containerd/continuity v0.0.0-20201208142359-180525291bb7 // indirect
 	github.com/docker/cli v20.10.11+incompatible // indirect
 	github.com/docker/docker v20.10.7+incompatible // indirect
@@ -66,8 +65,6 @@ require (
 	golang.org/x/sys v0.0.0-20210923061019-b8560ed6a9b7 // indirect
 	golang.org/x/text v0.3.6 // indirect
 	google.golang.org/protobuf v1.26.0 // indirect
-	gopkg.in/DATA-DOG/go-sqlmock.v1 v1.3.0 // indirect
 	gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f // indirect
-	gopkg.in/doug-martin/goqu.v5 v5.0.0 // indirect
 	gopkg.in/yaml.v2 v2.3.0 // indirect
 )

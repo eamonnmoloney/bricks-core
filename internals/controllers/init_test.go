@@ -9,6 +9,7 @@ import (
 	"github.com/jackc/pgx/v4/pgxpool"
 	r "github.com/moemoe89/integration-test-golang/repository"
 	"github.com/moemoe89/integration-test-golang/repository/postgres"
+	"github.com/ory/dockertest/v3"
 	"github.com/ory/dockertest/v3/docker"
 	"log"
 	"os"
